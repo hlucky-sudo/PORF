@@ -1,0 +1,380 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+
+<video autoplay muted loop id="myVideo">
+  <source src="{{ url_for('static', filename='images/video-bg.mp4') }}" type="video/mp4">
+</video>
+
+<div id="fullpage" class="fullpage-default">
+
+    <div class="section animated-row" data-section="slide01">
+        <div class="section-inner">
+            <div class="welcome-box">
+                <span class="welcome-first animate" data-animate="fadeInUp">HOLA, SOY</span>
+                <h1 class="welcome-title animate" data-animate="fadeInUp">JOHN MARCO</h1>
+                <p class="animate" data-animate="fadeInUp">Soy Ingeniero de Software que actualmente trabaja como Assistant CIO en Gomez Menacho SL. Principalmente hago consultoria a empresas para negocios digitales o su transformación digital. Me gusta compartir lo que aprendo en mi blogInfo.tk o en reuniones y conferencias.</p>
+                <div class="scroll-down next-section animate data-animate="fadeInUp""><img src="{{ url_for('static', filename='images/mouse-scroll.png') }}" alt=""><span>DESPLAZARSE HACIA ABAJO</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section animated-row" data-section="slide02">
+        <div class="section-inner">
+            <div class="about-section">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 wide-col-laptop">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-contentbox">
+                                    <div class="animate" data-animate="fadeInUp">
+                                        <span>SOBRE MÍ</span>
+                                        <h2>¿QUIÉN SOY?</h2>
+                                        <p>Soy un apasionado de la <strong>Tecnología</strong> y los <strong>Negocios</strong>. Graduado en <strong>Ingeneriería Informática</strong> por la <strong>Universidad Católica San Antonio de Murcia</strong>, y realizando la maestria en <strong>Digital Business</strong>. Con más de <strong>3 años de experiencia</strong> ahora disponible para usted.</p>
+                                    </div>
+                                    <div class="facts-list owl-carousel">
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="counter-box">
+                                                <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span class="count-number">5</span> Premios ganados
+                                            </div>
+                                        </div><!--
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="counter-box">
+                                                <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span class="count-number">1</span> Grado
+                                            </div>
+                                        </div>-->
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="counter-box">
+                                                <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span class="count-number">3</span> Experiencia
+                                            </div>
+                                        </div><!--
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="counter-box">
+                                                <i class="fa fa-support counter-icon" aria-hidden="true"></i><span class="count-number">6</span> Team Members
+                                            </div>
+                                        </div>-->
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="counter-box">
+                                                <i class="fa fa-certificate counter-icon" aria-hidden="true"></i><span class="count-number">10</span> Certificados
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Servicios-->
+    <div class="section animated-row" data-section="slide03">
+        <div class="section-inner">
+            <div class="row justify-content-center">
+                <div class="col-md-8 wide-col-laptop">
+                    <div class="title-block animate" data-animate="fadeInUp">
+                        <span>SERVICIOS</span>
+                        <h2>¿LO QUE HAGO?</h2>
+                    </div>
+                    <div class="services-section">
+                        <div class="services-list owl-carousel">
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+                                    <h3>DESARROLLO</h3>
+                                    <p>Aportamos tecnología, experiencia y conocimiento tecnológico al desarrollo de software a medida y soluciones de software con el objetivo de convertir tus proyectos en realidad.</p>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                                    <h3>ANALISIS DE DATOS</h3>
+                                    <p>Sacamos el máximo partido a los datos, los estructuramos y simplificamos para despues crear estrategias apartir de ellos y los  </p>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                                    <h3>GESTIÓN ÁGIL</h3>
+                                    <p>Integración y formación para el uso de metodologías para el desarrollo de procesos. Implementación de soluciones de gestión de las relaciones con cliente y planificación de los recursos empresariales. Mejorando asi la eficencia y potencioando la escabildad para obtener los mejores resultados.</p>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                                    <h3>CAPACITACIÓN</h3>
+                                    <p>Porque el cambio comienza desde dentro, preparamos a los equipos de trabajos para que afronten esta era difital y se cohesionen con la tecnología. </p>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                                    <h3>MARKETING DIGITAL</h3>
+                                    <p>Campañas especializadas para llegar al mayor número de personas interesadas en servicios y productos de tu sector. Aumentando así las ventas y tu imagen en el sector. </p>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-database" aria-hidden="true"></i></span>
+                                    <h3>PRESENCIA DIGITAL </h3>
+                                    <p>Llevamos tu presencia a las redes sociales y creamos tu pequeña cumunidad en ella. </p>
+                                </div>
+                            </div>
+                            <!--Añadir + servicios-->
+                            <!--
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                                    <h3>Actualizaciones y mantenamientos</h3>
+                                    <p>. </p>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="service-box">
+                                    <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                    <h3>Siempre Monitoreando</h3>
+                                    <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Habilidades-->
+    <div class="section animated-row" data-section="slide04">
+        <div class="section-inner">
+            <div class="row justify-content-center">
+                <div class="col-md-7 wide-col-laptop">
+                    <div class="title-block animate" data-animate="fadeInUp">
+                        <span>MIS HABILIDADES</span>
+                        <h2>¿EN QUÉ DESTACO?</h2>
+                    </div>
+                    <div class="skills-row animate" data-animate="fadeInDown">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">   
+                                <div class="skill-item">
+                                    <h6>HTML CSS</h6>
+                                    <div class="skill-bar">
+                                        <span>70%</span>
+                                        <div class="filled-bar"></div>
+                                    </div>          
+                                </div>
+                                <div class="skill-item">
+                                    <h6>PROGRAMACIÓN PYTHON</h6>
+                                    <div class="skill-bar">
+                                        <span>90%</span>
+                                        <div class="filled-bar-2"></div>
+                                    </div>          
+                                </div>
+                                <div class="skill-item">
+                                    <h6>REDES SOCIALES</h6>
+                                    <div class="skill-bar">
+                                        <span>70%</span>
+                                        <div class="filled-bar"></div>
+                                    </div>          
+                                </div>
+                                <div class="skill-item last-skill">
+                                    <h6>LIDERAZGO</h6>
+                                    <div class="skill-bar">
+                                        <span>90%</span>
+                                        <div class="filled-bar-2"></div>
+                                    </div>          
+                                </div>                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Trabajos-->
+    <div class="section animated-row" data-section="slide06">
+        <div class="section-inner">
+            <div class="row justify-content-center">
+                <div class="col-md-8 wide-col-laptop">
+                    <div class="title-block animate" data-animate="fadeInUp">
+                        <span>MIS TRABAJOS</span>
+                        <h2>¿QUÉ HE HECHO?</h2>
+                    </div>
+                    <div class="gallery-section">
+                        <div class="gallery-list owl-carousel">
+
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/Captura1.png') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>Proyecto IUSGEA</h4>
+                                        <p>Es un proyecto de la UCAM para la divulgación del medio ambiente. Donde podras consultar leyes y normas referidas al cuidado y protección del medio ambiente.</p>
+                                        <a href="http://iusgea.com/"><strong style="color: rgb(233, 18, 18); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">IUSGEA</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='images/Captura.png') }}" alt="Slogan" style="height: 100%;">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap CSS templates.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/item-2.jpg') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap themes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                            <!--
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/item-1.jpg') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/item-2.jpg') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download Bootstrap CSS templates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/item-3.jpg') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/item-1.jpg') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/item-2.jpg') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{ url_for('static', filename='images/item-3.jpg') }}" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>templatemo is the best</h4>
+                                        <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Testimonios-->
+    <!--
+    <div class="section animated-row" data-section="slide05">
+        <div class="section-inner">
+            <div class="row justify-content-center">
+                <div class="col-md-8 wide-col-laptop">
+                    <div class="title-block animate" data-animate="fadeInUp">
+                        <span>TESTIMONIOS</span>
+                        <h2>¿LO QUE ELLOS DICEN?</h2>
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="testimonials-section">
+                            <div class="testimonials-slider owl-carousel">
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="testimonial-item">
+                                        <div class="client-row">
+                                            <img src="" class="rounded-circle" alt="profile 1">
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <h4>Sandar</h4>
+                                            <p>"Ut varius leo eu mauris lacinia, eleifend posuere urna gravida. Aenean a mattis lacus."</p>
+                                            <span>Managing Director</span>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="testimonial-item">
+                                        <div class="client-row">
+                                            <img src="{{ url_for('static', filename='images/profile-01.jpg') }}" class="rounded-circle" alt="profile 2">
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <h4>Shinn</h4>
+                                            <p>"Nam iaculis, leo nec facilisis sollicitudin, dui massa tempus odio, vitae malesuada ante elit vitae eros."</p>
+                                            <span>CEO and Founder</span>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="testimonial-item">
+                                        <div class="client-row">
+                                            <img src="{{ url_for('static', filename='images/profile-01.jpg') }}" class="rounded-circle" alt="profile 3">
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <h4>Marlar</h4>
+                                            <p>"Etiam efficitur, tortor facilisis finibus semper, diam magna fringilla lectus, et fringilla felis urna posuere tortor."</p>
+                                            <span>Chief Marketing Officer</span>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+{% endblock %}
